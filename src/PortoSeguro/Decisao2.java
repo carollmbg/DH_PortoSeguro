@@ -9,8 +9,9 @@ public class Decisao2 {
 		
 		//Aula 3
 		
-		float n1,n2,resultado;
-		int op;
+		float n1,n2,resultado = 0;
+		int op = 0;
+		
 		
 		Scanner ler = new Scanner(System.in);
 		
@@ -27,13 +28,33 @@ public class Decisao2 {
 		System.out.println("\n3 - Multiplição");
 		System.out.println("\n4 - Divisão");
 		System.out.println("\nEscolha o número da operação:");
+		op = ler.nextInt();
 
 		switch(op)
 		{
 		case 1:
-			
+			resultado = n1 + n2;
+			break;
+		case 2:
+			resultado = n1 - n2;
+			break;
+		case 3:
+			resultado = n1 * n2;
+			break;
+		case 4:
+			if(n2 == 0)
+			{
+				System.out.println("\nNUNCA, JAMAIS, DIVIDIRÁS POR 0");
+			}
+			else
+			resultado = n1 / n2;	
+			break;
+		default:
+			System.out.println("\nNúmero inválido");
+					
 		}
-				
+		
+		System.out.println("\nResultado "+resultado);
 
 	}
 
