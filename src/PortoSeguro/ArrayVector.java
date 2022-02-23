@@ -10,15 +10,15 @@ public class ArrayVector {
 		
 		float[]media = new float[5];
 		float n1,n2,n3,somaMedia = 0, mediaGeral=0;
-		String[] nomeAlune = new String[5];
+		String[] nomeAlune = new String[5];//Ainda sem uso. 
 		int aprovad=0,reprovad=0,exame=0,x=0;
 		
 		Scanner leia = new Scanner(System.in);
 		
 		
-		for(x=0;x>6;x++);
+		for(x=0;x<5;x++)
 		{
-			System.out.println("\nNotas do alune: "+(x+1)+nomeAlune);
+			System.out.println("\nNotas do alune: "+(x+1));
 			System.out.println("\nEntre com a primeira nota: ");
 			n1 = leia.nextFloat();
 			while(n1<0 || n1>10)
@@ -45,7 +45,7 @@ public class ArrayVector {
 				
 			somaMedia += media[x];
 						
-			System.out.println("\nAlune: "+nomeAlune+"Média: "+media[x]);
+			System.out.println("\nMédia: "+media[x]);
 			
 			if(media[x]>=7 && media[x]<=10)
 			{
@@ -61,10 +61,8 @@ public class ArrayVector {
 			{	
 				System.out.println("\nAlune reprovado. :(");
 				reprovad++;
-			}
-			
-			
-		
+			}						
+			System.out.println("\nTotal:\nAlunes aprovades: "+aprovad+"\nAlunes de exame: "+exame+"\nAlunes reprovades: "+reprovad);
 		
 		}
 		
