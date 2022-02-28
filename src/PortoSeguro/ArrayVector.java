@@ -71,11 +71,11 @@ public class ArrayVector {
 
 			}
 			
-			
+			mediaGeral = somaMedia / x ;
 		
 
 			}						
-			System.out.println("\nTotal:\nAlunes aprovades: "+aprovad+"\nAlunes de exame: "+exame+"\nAlunes reprovades: "+reprovad);
+			System.out.println("\nMedia Gersl: "+mediaGeral+"\nTotais:\nAlunes aprovades: "+aprovad+"\nAlunes de exame: "+exame+"\nAlunes reprovades: "+reprovad);
 
 		
 		}

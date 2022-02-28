@@ -44,7 +44,7 @@ public class Decisao2 {
 		case 4:
 			if(n2 == 0)
 			{
-				System.out.println("\nNUNCA, JAMAIS, DIVIDIRÁS POR 0");
+				System.out.println("\nNUNCA, JAMAIS, DIVIDIRÁS POR 0"); //homenagem singela a fala profe Elaine de matematica da USJT 2014
 			}
 			else
 			resultado = n1 / n2;	
