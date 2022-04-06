@@ -13,28 +13,27 @@ public class LacoRepeticao3 {
 		positivos. Ou seja, o programa deve parar quando o usuário fornecer um valor
 		negativo.  */
 		
-		int num = 0;
+		int num = 1;
 	
 		Scanner leia = new Scanner(System.in);
 		
 		int soma = 0,media = 0, conta = 0;
 		
-						
-
-		do
+		
+		while(num > 0 )
 		{
 			System.out.println("\nEscolha um número inteiro:");
 			num = leia.nextInt();
 			
-			soma = soma + num;
-			conta++;
-			media = soma / conta;
-			
-		}	
-		while(num >= 0 );
-			
-		
-		
+			if( num > 0)
+			{	
+				soma += num;
+				conta++;
+				media = soma / conta;
+			}
+		}		
+				
+					
 		System.out.println("\nSoma: "+soma+"\nMédia: "+media+"\nQuantidade de entradas: "+conta);
 	    
 			
