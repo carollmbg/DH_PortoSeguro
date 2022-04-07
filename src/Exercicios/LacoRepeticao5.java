@@ -32,7 +32,7 @@ public class LacoRepeticao5 {
 		números de 1 até ele. Ex.: o usuário entra 7, o programa vai mostrar 28, pois
 		1+2+3+4+5+6+7=28 */
 		
-		int numero = 0 , comeco = 1, soma = 0, contador = 0 ;
+		int numero = 0 , soma = 0, contador = 0 ;
 		
 		Scanner leia = new Scanner(System.in);
 		
